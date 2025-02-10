@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spin Random Group Picker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎡 Pemilihan Kelompok</h1>
+
+        <div class="input-section">
+            <label>Masukkan Nama (pisahkan dengan koma):</label>
+            <textarea id="names" placeholder="Contoh: Akila, Budi, Citra, Dika"></textarea>
+
+            <label>Jumlah Kelompok:</label>
+            <input type="number" id="numGroups" min="2" max="10" value="2">
+
+            <button class="glow-button" onclick="startSpin()">Spin & Acak!</button>
+        </div>
+
+        <div class="wheel-container">
+            <canvas id="wheelCanvas"></canvas>
+        </div>
+
+        <h2>📌 Hasil Pembagian Kelompok:</h2>
+        <div id="groupResult"></div>
+    </div>
+
+</body>
+</html>
